@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 /**
  * Author: Zun Dai
  * Student ID: 300839401
- * Date modified: 2016-06-03
- * Program description: Assigment1, implementing the Hero class
+ * Date modified: 2016-06-10
+ * Program description: Assigment2, implementing the SuperHero class
  * 
  */
 
 namespace Assignment2
 {
-    class Hero
+    public class Hero
     {
         //Private instance variables
-        private string _name;
+        public string _name;
         private int _strength;
         private int _speed;
         private int _health;
@@ -42,6 +42,11 @@ namespace Assignment2
         {
             this._initialize();
             generateAbilities();
+        }
+
+        public Hero(string name)
+        {
+            Name = name;
         }
 
         private void _initialize()

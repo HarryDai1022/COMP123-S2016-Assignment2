@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 /**
  * Author: Zun Dai
  * Student ID: 300839401
- * Date modified: 2016-06-03
- * Program description: Assigment1, implementing the Hero class
+ * Date modified: 2016-06-10
+ * Program description: Assigment2, implementing the SuperHero class
  * 
  */
 
@@ -28,6 +28,9 @@ namespace Assignment2
             arclight.fight();
 
             Console.WriteLine();
+
+            SuperHero newSuperHero = new SuperHero("Arc Light II");
+            newSuperHero.showPowers();
         }
     }
 }
